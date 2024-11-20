@@ -11,9 +11,18 @@ console.log(`배열1 : ${emergencyFood}`);
 console.log(`배열2 : ${emergencyFood2}`);
 console.log(`예전 배열 병합 : ${oldArrAdd}`);
 
-// ES6 이후 spread 연산자 활용법
+// ES6 이후 spread 연산자 활용법 
 const newArrAdd = [...emergencyFood, ...emergencyFood2];
 
 console.log(`배열1 : ${emergencyFood}`);
 console.log(`배열2 : ${emergencyFood2}`);
 console.log(`스프레드 연산자 사용 : ${newArrAdd}`);
+
+// 스프레드 연산자는 객체에서도 사용 가능하다.
+// 객체 안에 키와 값을 추가하고 싶을 때도 사용가능하다.
+
+let user = { name: 'gang', city: 'pohang'};
+
+user = {...user, gender: 'male'};
+
+console.log(user);
